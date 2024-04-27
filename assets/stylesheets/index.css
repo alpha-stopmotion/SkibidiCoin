@@ -94,3 +94,9 @@ body {
     width: 100%;
     cursor: pointer;
 }
+
+.inline-image {
+    display: inline-block;
+    aspect-ratio: 1/1;
+    height: 1em;
+}
