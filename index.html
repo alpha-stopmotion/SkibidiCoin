@@ -1,167 +1,74 @@
 <!DOCTYPE html>
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SkibidiCoin OFFICIAL</title>
-<style>
-  body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-  
-  .navbar {
-    overflow: hidden;
-    background-color: #000;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 0 20px;
-    z-index: 3;
-  }
-  
-
-  .navbar a {
-    float: right;
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 22px 16px;
-    text-decoration: none;
-    margin-right: 20px;
-  }
-  
-
-  .navbar a:hover {
-    color: rgb(255, 251, 18);
-  }
-
-  .content {
-    padding-top: 60px;
-    position: relative;
-    overflow-y:hidden;
-  }
-
-  .section {
-    padding: 20px;
-    color: black;
-  }
-
-  .section1 {
-    position: relative;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-
-  .section1 video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; 
-  }
-
-  .section2 {
-    background-color: rgb(255, 255, 255);
-    height: 500px;
-  }
-
-  .section3 {
-    background-color: rgb(255, 255, 255);
-    height: 500px;
-  }
-
-  .section4 {
-    background-color: rgb(255, 255, 255);
-    height: 500px;
-  }
-
-  .active {
-    font-weight: bold;
-  }
-
-  .logo {
-    margin-top: 50px;
-    text-align: center;
-  }
-
-  .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    cursor: pointer; 
-  }
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkibidiCoin Official Site</title>
 </head>
+
 <body>
 
-<div class="navbar">
-  <a href="#section1">So Home</a>
-  <a href="#section2">What is Skibidi Coin</a>
-  <a href="#section3">Become an Investor</a>
-  <a href="#section4">Community</a>
-</div>
-
-<div class="content">
-  <div class="section section1" id="section1">
-    <video autoplay loop muted>
-      <source src="marketmove-mm.mp4" type="video/mp4">
-    </video>
-    <div class="overlay"></div> 
-    <h1>Skibidi</h1>
-    <p>TM</p>
-    <div class="logo">
-      <img src="assets/images/skibidicoin.png" alt="Logo" width="100" height="100">
+    <div class="navbar">
+        <a href="#section1">So Home</a>
+        <a href="#section2">What is Skibidi Coin</a>
+        <a href="#section3">Become an Investor</a>
+        <a href="#section4">Community</a>
     </div>
-  </div>
-  <div class="section section2" id="section2">
-    <h3>Section 2</h3>
-    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  <div class="section section3" id="section3">
-    <h3>Section 3</h3>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  </div>
-  <div class="section section4" id="section4">
-    <h3>Section 4</h3>
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-  </div>
-</div>
 
-<div class="footer" id="trademark">
-  <p>&copy; 2024 Skibidi. All rights reserved. Trademarks and brands are the property of their respective owners.<!---LOL I copied this from random website like why would you even say respective owners ????--></p>
-</div>
+    <div class="content">
+        <div class="section section1" id="section1">
+            <video autoplay loop muted>
+                <source src="/assets/other/marketmove-mm.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+            <h1>Skibidi</h1>
+            <p>TM</p>
+            <div class="logo">
+                <img src="/assets/images/skibidicoin.png" alt="Logo" width="100" height="100">
+            </div>
+        </div>
+        <div class="section section2" id="section2">
+            <h3>Section 2</h3>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="section section3" id="section3">
+            <h3>Section 3</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+        </div>
+        <div class="section section4" id="section4">
+            <h3>Section 4</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </div>
+    </div>
 
-<script>
-  document.getElementById("trademark").addEventListener("click", function() {
-    this.style.display = "none"; 
-  });
+    <div class="footer" id="trademark">
+        <p>&copy; 2024 Skibidi. All rights reserved. Trademarks and brands are the property of their respective
+            owners.</p>
+    </div>
 
-  document.querySelectorAll('.navbar a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-
-      const targetId = this.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetId);
-
-      if (targetSection) {
-        window.scrollTo({
-          top: targetSection.offsetTop - 50,
-          behavior: 'smooth'
+    <script>
+        document.getElementById("trademark").addEventListener("click", function () {
+            this.style.display = "none";
         });
-      }
-    });
-  });
-</script>
+
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 50,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 
 </body>
+
 </html>
