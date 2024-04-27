@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skibidi</title>
+<style>
+
+
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 -100px;
+
+  }
+  
+
+  .navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+
+  .navbar a:hover {
+    color: rgb(255, 251, 18);
+  }
+
+  .content {
+    padding-top: 60px; 
+  }
+
+ 
+  .section1 {
+    background-color: rgb(255, 0, 0);
+    height: 1000px;
+  }
+
+  .section2 {
+    background-color: rgb(0, 255, 0);
+    height: 1000px;
+  }
+
+  .section3 {
+    background-color: rgb(0, 0, 0);
+    height: 1000px;
+  }
+
+  .section4 {
+    background-color: rgb(160, 45, 0);
+    height: 1000px;
+  }
+
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#So Home ">So Home</a>
+  <a href="#What is Skibidi Coin">What is Skibidi Coin</a>
+  <a href="#Your Wallet">Your Wallet</a>
+  <a href="#Very Community">Very Community</a>
+</div>
+
+
+
+</div>
+
+</body>
+</html>
+
+<div class="section1"></div>
+<div class="section2"></div>
+<div class="section3"></div>
+<div class="section4"></div>
+
+<!-- Copied from a random website lol i am to dumb to write this myself -->
+<script>
+  window.addEventListener("scroll", function() {
+    var scrollPosition = window.scrollY;
+    var sections = document.querySelectorAll(".content > div");
+
+    sections.forEach(function(section, index) {
+      var offset = section.offsetTop - 100; 
+      if (scrollPosition >= offset) {
+        switch (index) {
+          case 0:
+            document.body.style.backgroundColor = "A";
+            break;
+          case 1:
+            document.body.style.backgroundColor = "b";
+            break;
+          case 2:
+            document.body.style.backgroundColor = "c";
+            break;
+          case 3:
+            document.body.style.backgroundColor = "d";
+            break;
+          default:
+            break;
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
