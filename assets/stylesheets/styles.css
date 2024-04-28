@@ -1,90 +1,92 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-}
-
-.navbar {
+  }
+  
+  .navbar {
     overflow: hidden;
     background-color: #000;
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 0 20px;
-    z-index: 3;
-}
-
-
-.navbar a {
+    padding: 20px 20px; 
+    transition: all 0.3s ease-in-out; 
+    z-index: 1;
+    
+  }
+  
+  .navbar.scroll-down {
+    padding: 5px 10px; 
+  }
+  
+  .navbar a {
     float: right;
     display: block;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 22px 16px;
+    padding: 5px 16px; 
     text-decoration: none;
     margin-right: 20px;
-}
-
-
-.navbar a:hover {
+  }
+  
+  .navbar a:hover {
     color: rgb(255, 251, 18);
-}
+  }
 
-.content {
-    padding-top: 60px;
-    position: relative;
-    overflow-y: hidden;
-}
+  .content {
+    padding-top: 20px;
+  }
 
-.section {
+  .section {
     padding: 20px;
     color: black;
-}
+  }
 
-.section1 {
+  .section1 {
     position: relative;
     height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-}
+  }
 
-.section1 video {
+  .section1 video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
-}
+    z-index: -1; 
+  }
 
-.section2 {
+  .section2 {
     background-color: rgb(255, 255, 255);
     height: 500px;
-}
+  }
 
-.section3 {
+  .section3 {
     background-color: rgb(255, 255, 255);
     height: 500px;
-}
+  }
 
-.section4 {
+  .section4 {
     background-color: rgb(255, 255, 255);
     height: 500px;
-}
+  }
 
-.active {
+  .active {
     font-weight: bold;
-}
+  }
 
-.logo {
+  .logo {
     margin-top: 50px;
     text-align: center;
-}
+  }
 
-.footer {
+  .footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
@@ -92,11 +94,5 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    cursor: pointer;
-}
-
-.inline-image {
-    display: inline-block;
-    aspect-ratio: 1/1;
-    height: 1em;
-}
+    cursor: pointer; 
+  }
