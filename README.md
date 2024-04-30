@@ -1,6 +1,5 @@
 # SkibidiCoin (SKIB)
-Here at SkibidiCoin, we pride ourselves in our Skibidi.<br>
-Enjoy the power and influence of Skibidi with SkibidiCoin!<br>
-Invest and watch the SkibidiCoin prosper!*<br><br>
 
-*May or may not prosper
+This is a fork of https://github.com/DeTsystems/SkibidiCoin 
+
+All these assets do not belong to me.
